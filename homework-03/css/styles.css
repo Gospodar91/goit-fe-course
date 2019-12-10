@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;   
+  }
+  *,
+  *::before,
+  *::after{
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+  }
+img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom :30px;
+  }
+.container {  
+      display: inline-block;
+      width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Playfair Display  Regular ', sans-serif;
+      
+    }
+    /*Navigation*/
+.main-nav {
+      padding-top: 76px;
+      padding-bottom:102px ;
+       }
+.site-navigation{
+     font-size: 14px;     
+      text-transform: uppercase;
+      text-decoration: none;  
+         
+        }
+.main-menu-link{
+       text-decoration: none;
+       color: #000000;     
+    
+  }
+.site-navigation li {
+    display: inline-block;   
+     
+    }
+.lifestyle{
+    margin-right: 122px;    
+}
+.photodiary{
+    margin-right: 104px;
+}
+.music{
+   
+    margin-right: 98px;
+}
+.travel{
+    margin-right: 0px;
+}
+.main-menu-link:hover {
+    color:#03a9f4;
+  }
+  .main-menu-link:focus {
+    color:rgb(255, 0, 0);
+}
+/*Text and main content*/
+
+
+
+.story-format{
+    display: inline-block;
+    margin: 0;
+    padding-bottom: 70px;
+    font-size: 0;
+    text-align: left;
+   }
+.story{
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+   
+   
+}
+.story:nth-child(2n){
+    margin-right: 0;
+}
+.story .subtitle {
+    font-size: 14px;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    font-family:'Ubuntu light', sans-serif;
+    margin-bottom: 32px;
+    }
+.story .low-subtitle{
+    font-size: 30px;
+    color: rgb(98, 98, 98);
+    margin-bottom: 28px;
+    font-family: 'Playfair Display Regular',sans-serif;
+  
+}
+.story p{
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+    font-family: 'Playfair Display', serif; 
+    
+    }
+    .story{
+        margin-bottom: 135px;
+    }
+    .story:nth-last-child(-n+2) {
+        margin-bottom: 55px;
+  }
+  .load-more {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(102, 102, 102);
+    font-family: 'Playfair Display';
+    font-size: 20px;
+  }
+  .load-more:hover {
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 255);
+  
+  }
+  .load-more:focus {
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 255);
+  
+  }
+
+
+    
+
+   
+  
