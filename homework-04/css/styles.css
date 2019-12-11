@@ -168,10 +168,14 @@ font-family: 'Roboto Black',sans-serif;
         }
 
 /* Second Section*/
+.our-latest-news{
+  padding-bottom: 46px;
+}
 
 .latest{
   display: block;
   text-align: center;
+  margin-bottom: 80px;
   
 }
 .latest-news{
@@ -192,7 +196,7 @@ padding-top: 98px;
   margin: 0 auto;
   border: 1px solid rgb(26, 188, 156);
   margin-top: 24px;
-  margin-bottom: 80px;
+  
 }
 
 .low-content-list{
@@ -208,9 +212,8 @@ padding-top: 98px;
   margin-right: 0px;
 }
 .h-title{
-  width: 350px;
-  float: left;
-  padding-bottom: 24px;
+
+  margin-bottom: 24px;
 }
 .h-title::after{
   display: block;
@@ -233,32 +236,29 @@ padding-top: 98px;
     font-size: 14px;
     line-height: 26px;
     font-family: 'Open Sans Regular',sans-serif;
+    margin-bottom: 14px;
   }
 
 
-  .low-button{
+
+  .last-link{
     display: inline-block;
     text-align: center;
-     margin-top: 14px;
-    margin-bottom: 46px;
+     padding: 14px;
+      text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
     width: 160px;
     height: 50px;
     color: white;
     background-color:rgb(78, 198, 171) ;
-  }
-  .last-link{
-    display: block;
-    margin-top:14px;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 26px;
-    font-family: 'Open Sans Light',sans-serif;
+     font-family: 'Open Sans Light',sans-serif;
     color: white;
   }
-   .low-button:hover  {
+   .last-link:hover  {
     background-color:red; 
     }
-    .low-button:focus  {
+    .last-link:focus  {
       background-color:red; 
       }
 
