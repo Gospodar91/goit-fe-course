@@ -14,48 +14,38 @@ img{
       height: auto;
       margin-bottom :30px;
   }
+  body{
+    font-family: 'Playfair Display  Regular ', sans-serif,'Ubuntu light', sans-serif;
+
+  }
 .container {  
-      display: inline-block;
       width: 900px;
       margin: 0 auto;
-      text-align: center;
-      vertical-align: middle;
-      font-family: 'Playfair Display  Regular ', sans-serif;
-      
-    }
+       }
     /*Navigation*/
 .main-nav {
+      text-align: center;
       padding-top: 76px;
       padding-bottom:102px ;
        }
 .site-navigation{
      font-size: 14px;     
       text-transform: uppercase;
-      text-decoration: none;  
-         
+      text-decoration: none;                 
         }
+.site-navigation li {
+            display: inline-block;
+            margin-right: 125px;       
+            }
+.site-navigation li:last-child{
+             margin-right: 0px;
+            }
 .main-menu-link{
+       display: block;
        text-decoration: none;
        color: #000000;     
     
   }
-.site-navigation li {
-    display: inline-block;   
-     
-    }
-.lifestyle{
-    margin-right: 122px;    
-}
-.photodiary{
-    margin-right: 104px;
-}
-.music{
-   
-    margin-right: 98px;
-}
-.travel{
-    margin-right: 0px;
-}
 .main-menu-link:hover {
     color:#03a9f4;
   }
@@ -63,9 +53,6 @@ img{
     color:rgb(255, 0, 0);
 }
 /*Text and main content*/
-
-
-
 .story-format{
     display: inline-block;
     margin: 0;
@@ -77,9 +64,7 @@ img{
     display: inline-block;
     width: 420px;
     margin-right: 60px;
-   
-   
-}
+   }
 .story:nth-child(2n){
     margin-right: 0;
 }
@@ -131,6 +116,20 @@ img{
     color: rgb(0, 0, 255);
   
   }
+  /*1. container пишем только ширину и маржин: 0 авто. Стили для текста нужно написать боди
+2. всем лишкам в site-navigation указываем одинаковый маржин-райт. крайней лишке маржин-райт нужно убрать. Для этого удобно использовать псевдоклассы:
+http://joxi.ru/LmGBk1DCJ4WZ3r
+3. ссылочки не забывайте делать блочными
+4. в меин должна быть одна секция, а в ней 6 артиклов и кнопка
+5. id можно смело убирать
+6. subtitle - <p>
+7. low-subtitle - <h2>
+
+P.S после определенного оформления css кнопка перестает быть кликабельной.Это норм?
+
+*/ 
+
+
 
 
     
