@@ -28,12 +28,15 @@ img{
       padding-top: 76px;
       padding-bottom:102px ;
        }
-.site-navigation{
-     font-size: 14px;     
-      text-transform: uppercase;
-      text-decoration: none;                 
-        }
+     .site-navigation{
+       font-size: 0;
+     }
+    
 .site-navigation li {
+  font-size: 14px;     
+  text-transform: uppercase;
+  text-decoration: none;  
+  
             display: inline-block;
             margin-right: 125px;       
             }
@@ -116,18 +119,7 @@ img{
     color: rgb(0, 0, 255);
   
   }
-  /*1. container пишем только ширину и маржин: 0 авто. Стили для текста нужно написать боди
-2. всем лишкам в site-navigation указываем одинаковый маржин-райт. крайней лишке маржин-райт нужно убрать. Для этого удобно использовать псевдоклассы:
-http://joxi.ru/LmGBk1DCJ4WZ3r
-3. ссылочки не забывайте делать блочными
-4. в меин должна быть одна секция, а в ней 6 артиклов и кнопка
-5. id можно смело убирать
-6. subtitle - <p>
-7. low-subtitle - <h2>
-
-P.S после определенного оформления css кнопка перестает быть кликабельной.Это норм?
-
-*/ 
+ 
 
 
 
