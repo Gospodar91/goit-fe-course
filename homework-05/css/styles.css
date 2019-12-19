@@ -283,6 +283,7 @@ min-height: 600px;
     background: rgb(140, 140, 140);
     padding-left:14px ;
     padding-top:10px ;
+    color: rgb(255, 255, 255);
   }
   
   
@@ -379,21 +380,26 @@ display: inline-block;
 
   .fourth-button{
 
+
+    
+
    display: block;
    padding-left: 35px;
     width: 150px;
     height: 50px;
   border: 1px solid white;
   
-    background-color: rgba(0,0,0,0.52); 
+  background-color: rgb(50, 50, 50);
+     
   margin: 0 auto;
  font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Open Sans Regular';
   color: rgb(255, 255, 255);
   background-clip: padding-box;
   
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 8px 10px;
   background-image: url(../img/fourth-item.png);
 
  }
@@ -409,12 +415,16 @@ display: inline-block;
   opacity: 1;
   
 }
-.name-price:hover .name {
+.main-card-section:hover  .name {
   background-color:rgb(26, 188, 156); 
   }
-  .name-price:hover .price {
-    background-color:rgb(127, 217, 199); 
-    }
+  .main-card-section:hover  .price{
+  
+      background-color:rgb(26, 188, 156,0.4); 
+    
+    
+
+  } 
 
 
     .low-icons :hover{
