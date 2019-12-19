@@ -11,6 +11,7 @@ html {
   }
   a{
     display: inline-block;
+    text-decoration: none;
   }
 img{
       display: block;
@@ -273,6 +274,7 @@ min-height: 600px;
     background:rgb(50, 50, 50);
     padding-left:14px ;
     padding-top:10px ;
+    list-style-type:none;
   }
   .price{
     float:right ;
