@@ -86,7 +86,7 @@ body {
 }
 
 .main-link {
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans Bold',sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -156,6 +156,8 @@ body {
   border: none;
   color: white;
   border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 
   
 
@@ -165,6 +167,8 @@ body {
 .slider-left {
   float: left;
   background-color: rgba(26, 188, 156, .62);
+  background-image: url(../img/slider-l.png);
+ 
 
 
 }
@@ -172,6 +176,7 @@ body {
 .slider-right {
   background-color: rgb(26, 188, 156);
   float: right;
+  background-image: url(../img/slider-r.png);
 
 
 
@@ -188,22 +193,24 @@ body {
 
 .slider-text {
   position: absolute;
-  width: 850px;
+  width: 920px;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   text-transform: uppercase;
- 
+  padding-left: 70px;
+  padding-right: 70px;
   z-index: 2;
 }
 
 .slider-text h2 {
   display: block;
   font-size: 60px;
+  line-height: 82px;
 
-  font-family: 'Roboto Light', sans-serif;
+  font-family: 'Roboto Black', sans-serif;
 
 
 }
