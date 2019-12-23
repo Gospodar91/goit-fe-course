@@ -1,0 +1,346 @@
+html {
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-slab-v10-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-italic - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+    url('../fonts/noto-serif-v8-latin-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/noto-serif-v8-latin-italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+a {
+  display: block;
+  text-decoration: none;
+
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 940px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 6.375rem;
+}
+
+.logo a {
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+  padding-left: 0.625rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 2.929;
+
+}
+
+.nav-item a:hover {
+  color: #fed136;
+
+}
+
+.nav-list {
+  width: 30.3125rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-list li {
+  text-decoration: none;
+}
+
+/* Main*/
+.services {
+  padding-bottom: 7rem;
+}
+
+.service-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+
+
+}
+
+.service-text {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 102px;
+  color: rgb(119, 119, 119);
+  font-family: 'Noto Serif';
+
+
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.service-list-item::before {
+  display: block;
+  content: '';
+  width: 4.375rem;
+  height: 4.375rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.625rem;
+  border: 2px solid rgb(253, 209, 53);
+
+}
+
+.buscket::before {
+  content: '';
+
+  background-image: url(../img/basket.png);
+
+}
+
+.laptop::before {
+  background-image: url(../img/laptop.png);
+  content: '';
+
+}
+
+.security:before {
+  content: '';
+  background-image: url(../img/security.png);
+
+}
+
+.service-list-item {
+  width: 18.125rem;
+}
+
+.service-list-item h2 {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 0.875rem;
+  font-weight: 700;
+
+}
+
+.service-list-item p {
+  text-align: center;
+  font-size: 0.875rem;
+  padding-bottom: 1rem;
+  font-family: 'Roboto Slab';
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+
+
+}
+
+/* second section*/
+.contact-us-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+
+
+}
+
+.contact {
+  background-image: url(../img/map.png);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 6.375rem;
+  background-size: cover;
+
+}
+
+.contact-us-text {
+  text-align: center;
+  font-size: 16px;
+
+  color: rgb(119, 119, 119);
+  padding-bottom: 4.75rem;
+  font-family: 'Noto Serif';
+
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28.4375rem;
+  height: 13.125rem;
+  margin-right: 1.875rem;
+
+}
+
+.left-form-item {
+  height: 3.25rem;
+
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 100%;
+  padding-left: 1.25rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.text-area {
+  width: 28.4375rem;
+  height: 13.125rem;
+
+
+
+}
+
+.contact-textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  resize: none;
+
+}
+
+.contact-btn {
+  width: 15.625rem;
+  height: 3.4375rem;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  margin-top: 1.625rem;
+  margin-bottom: 7.25rem;
+  background-color: #fed136;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.left-form-item::placeholder {
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+
+}
+
+.contact-textarea::placeholder {
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+  text-transform: uppercase;
+}
+
+.left-form-item input:required:focus {
+  outline: none;
+}
+
+.left-form-item input:required:focus:valid {
+  outline: 0.25rem solid #008000;
+}
+
+.left-form-item input:required:focus:invalid {
+  outline: 0.25rem solid #ff0000;
+}
+
+.text-area textarea:required:focus:valid {
+  outline: 0.25rem solid #008000;
+}
+
+.text-area textarea:required:focus:invalid {
+  outline: 0.25rem solid #ff0000;
+}
