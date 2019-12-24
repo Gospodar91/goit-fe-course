@@ -1,0 +1,391 @@
+html {
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+a {
+  display: block;
+  text-decoration: none;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.background {
+  background-image: url(../img/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.nav-ul {
+  text-align: center;
+  font-size: 0;
+  padding-top: 20px;
+ 
+}
+
+.nav-item-li {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 30px;
+
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.nav-item-li:hover{
+
+}
+
+
+.nav-item-li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+
+}
+
+.logo {
+  display: block;
+  text-align: center;
+ 
+
+}
+
+.logo a {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.holiday{
+  padding-bottom: 140px;
+ text-align: center;
+}
+
+.holiday-title {
+  
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+
+
+
+}
+.holiday-text{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 18px;
+  
+  
+}
+
+
+
+
+
+.holiday-link a{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  
+  border-radius: 30px;
+  background-color: #ff4e50;
+ display: block;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+   
+  
+   
+}
+
+/* Конец первой части */
+
+.team{
+
+  padding-top: 70px;
+  text-align: center;
+  padding-bottom: 60px;
+
+}
+.team-title{
+ 
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+  
+}
+.team-tist{
+  display: block;
+  margin: 0 auto;
+}
+.team-img{
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.team-img img{
+  
+  margin: 0 auto;
+}
+.team-name{
+  
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+   
+  
+  
+
+}
+.team-about{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+  margin-bottom: 26px;
+ padding-left: 50px;
+ padding-right: 50px;
+ 
+  
+
+}
+.team-about:last-child{
+  margin-bottom: 28px;
+}
+
+
+.low-link a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border:2px solid  #ff4e50;
+  border-radius: 30px;
+  background-color: #ffffff;
+       font-size: 14px;
+       font-family: "Montserrat";
+     
+       font-weight: bold;
+       line-height: 1.2;
+       
+       color:  #ff4e50;
+}
+       /* PSEUDO.*/
+       .team-img::after{
+         position: absolute;
+         bottom: 0;
+         right: 25%;
+         transform: translateX(-50%);
+        
+    
+         width: 36px;
+         height: 36px;
+         border-radius: 100%;
+         border:3px solid white;
+         content: '';
+        
+         background-repeat: no-repeat;
+         background-position: center;
+        
+      
+       }
+.brad::after{ 
+  
+  background-color: #ff4e50;
+         
+  background-image: url(../img/brad-icon.png);
+  
+  
+
+}
+.lucas::after{
+  background-color: #ffa507;
+ 
+  background-image: url(../img/lucas-icon.png);
+}
+.heather::after{
+  background-color: #1cd7ad;
+  background-image: url(../img/heather-icon.png);
+}
+.last-girl::after{
+  background-color: #4e73db;
+  background-image: url(../img/last-girl-icon.png);
+
+}
+@media (min-width:320px)  and (max-width: 767px){
+  .logo{
+    padding-bottom: 36px;
+    
+  }
+  .nav-ul{
+    margin-bottom: 118px;
+  }
+
+
+}
+/* TAPBLET*/
+@media (min-width: 768px){
+.container{
+  width: 660px;
+
+
+}
+.navigation{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 155px;
+}
+
+.holiday-title{
+  padding-left: 20px;
+  padding-right: 20px;
+ font-size: 52px;
+   margin-bottom: 40px;
+   
+  
+  
+}
+.holiday-text{
+  font-size: 24px;
+  margin-bottom: 40px;
+
+}
+.holiday-link{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+
+}
+.holiday-link a{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.holiday{
+  padding-bottom: 72px;
+
+}
+.team-title{
+  font-size: 22px;
+}
+.team-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+  
+}
+.team-card{
+  flex-basis: 50% ;
+}
+.team-list li:nth-child(2){
+  order: 2;
+}
+.team-list li:nth-child(4){
+  order: 3;
+}
+.low-link{
+  margin-top: 38px;
+  margin-bottom: 40px;
+}
+}
