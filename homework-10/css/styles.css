@@ -176,20 +176,41 @@ margin: 0 auto;
   justify-content: space-between;
   align-content: baseline;
 
-  width: 90px;
+  width: 60px;
 
 }
 
 .buttons__nav{
-  width: 30px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
+}
+.nav-link::after{
+  content: '';
+  display: block;
+  
+  margin-top: 10px;
+  height: 4px;
+  
+  visibility: hidden;
+  opacity: 0;
+
+}
+.nav-link:hover .main-nav-link{
+  color: rgb(251, 227, 137);
+
 }
 
 
+.content-svg:hover  {
+fill:  rgb(251, 227, 137);
+}
 
-
-
-
+.nav-link:hover::after{
+  opacity: 1;
+  content: '';
+  visibility: visible;
+  background-color:   rgb(251, 227, 137);
+}
 .welcome{
  text-align: center;
  padding-bottom: 230px;
@@ -266,7 +287,7 @@ padding-bottom: 110px;
   fill: white;
   width: 20px;
   height: 20px;
-  background-color: red;
+
  }
 
 
@@ -460,7 +481,7 @@ padding-bottom: 110px;
     top: 0;
     left: 0;
    
-    background-image: url(../svg/digital.svg);
+    ground-image: url(../svg/digital.svg);
   }
   
   /* Заголовки с карточками*/
@@ -517,7 +538,7 @@ padding-bottom: 110px;
   }
   
   .team-card {
-  
+  margin: 0 auto;
     width: 380px;
     
   
@@ -544,8 +565,7 @@ padding-bottom: 110px;
   }
   
   
-  
-  
+
   .name {
     padding-top: 30px;
     padding-bottom: 18px;
@@ -602,6 +622,11 @@ padding-bottom: 110px;
     background-position: center;
     background-repeat: no-repeat;
   }
+  .social-list-icons a:hover{
+  
+      background-color: #f38181;
+    }
+    
   
   .team-card:hover .overlay {
     transform: translate(-10px, -10px);
@@ -617,22 +642,14 @@ padding-bottom: 110px;
   }
   
   
-  .facebook {
-    background-image: url(../img/facebook.png);
-  }
   
-  .pinterest {
-    background-image: url(../img/pinterest.png);
+  .content-icon-svg{
+    transform: translateY(50%,-50%);
+    object-position: center;
+    width: 56px;
+    height: 56px;
+    fill: pink
   }
-  
-  .twitter {
-    background-image: url(../img/twitter.png);
-  }
-  
-  .instagram {
-    background-image: url(../img/instagram.png);
-  }
-  
   .icons:hover {
     background-color: rgb(149, 225, 211);
   }
@@ -663,6 +680,7 @@ padding-bottom: 110px;
   }
   
   .low-footer {
+    
     display: flex;
     width: 100%;
     justify-content: space-between;
