@@ -393,7 +393,7 @@ margin: 0 auto;
 
 
 
-@media screen and (max-width: 760px) {
+@media (max-width: 760px) {
   .logo {
     display: none;
   }
