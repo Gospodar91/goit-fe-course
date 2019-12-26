@@ -26,7 +26,7 @@ img {
 }
 
 .container {
-
+margin: 0 auto;
   width: 1200px;
 }
 
@@ -48,18 +48,21 @@ img {
   
   margin-top: 10px;
   height: 4px;
-  width: 52px;
+  
   visibility: hidden;
   opacity: 0;
 
 }
 
+.main-nav-link:hover{
+  color: #f6a6a6;
+}
 .nav-link:hover::after{
   opacity: 1;
   content: '';
   visibility: visible;
   background-color: #f38181;
-  color: #f6a6a6;
+  
   
 }
 .nav-ul {
@@ -74,7 +77,7 @@ img {
 
 .nav-ul li {
   display: block;
-  width: 82px;
+  
   margin-right: 20px;
 
 
@@ -83,7 +86,7 @@ img {
 .main-nav-link {
   color: #b0e9de;
   text-transform: uppercase;
-  font-family: 'Montserrat Regular', sans-serif;
+  font-family:'Montserrat', sans-serif;
   text-decoration: none;
 
 }
@@ -126,6 +129,7 @@ img {
 
 
 .amazing-services {
+  display: block;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
@@ -149,6 +153,7 @@ img {
 }
 
 /* SErvices list*/
+
 .services {
   width: 1200px;
   display: flex;
@@ -162,11 +167,11 @@ img {
 .service-item {
   position: relative;
   padding-bottom: 96px;
-  padding-left: 40px;
+  padding-left: 92px;
   width: 300px;
   text-align: left;
   margin-right: 20px;
-
+ 
 }
 
 .service-item:nth-child(3n) {
@@ -178,15 +183,13 @@ img {
   padding-bottom: 64px;
 }
 
-.service-item h3 {
-  font-weight: 500;
 
-}
 
 .service-title {
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-family: "Montserrat Regular", sans-serif;
+
   padding-bottom: 20px;
   text-transform: uppercase;
 }
@@ -194,8 +197,9 @@ img {
 .service-text {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
-
-}
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+  }
 
 /* Пвсевдоэлементы*/
 .photography::before {
@@ -208,7 +212,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+  
   background-image: url(../img/photography.png);
 }
 
@@ -222,7 +226,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+  
   background-image: url(../img/web.png);
 }
 
@@ -236,7 +240,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+  
   background-image: url(../img/creativity.png);
 }
 
@@ -250,7 +254,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+
   background-image: url(../img/seo.png);
 }
 
@@ -264,7 +268,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+  
   background-image: url(../img/css.png);
 }
 
@@ -278,11 +282,14 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-50%);
+ 
   background-image: url(../img/digital.png);
 }
 
 /* Заголовки с карточками*/
+.team-section{
+  padding-bottom: 80px;
+}
 .team {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -297,14 +304,14 @@ img {
   padding-bottom: 94px;
 }
 
-.parag {
+.title .parag {
   display: block;
   width: 980px;
   font-size: 15px;
   line-height: 24px;
-  font-family: 'Roboto Regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  color: rgb(153, 153, 153);
+  color: #999999
 }
 
 .team::after {
@@ -335,7 +342,7 @@ img {
 .team-card {
 
   width: 380px;
-  margin-bottom: 80px;
+  
 
 }
 
@@ -344,7 +351,7 @@ img {
 
 
 .overlay {
-
+  display: flex;
   width: 100%;
   height: 100%;
   border: none;
@@ -354,6 +361,8 @@ img {
   left: 0%;
   visibility: hidden;
   opacity: 0;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -365,7 +374,7 @@ img {
   padding-bottom: 18px;
   display: block;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   color: rgb(51, 51, 51);
   text-transform: uppercase;
   line-height: 1.2;
@@ -379,7 +388,7 @@ img {
   text-align: center;
 
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: rgb(153, 153, 153);
   font-style: italic;
   line-height: 1.6;
@@ -390,19 +399,24 @@ img {
 
 .team-img {
   position: relative;
-  min-height: 470px;
+  
+  
 }
 
 /*TEAM HOVER*/
 .social-list {
   display: flex;
   list-style-type: none;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+ 
+  
 
 }
-
+.social-list-icons {
+  margin-right: 1px;
+}
+.social-list-icons:last-child{
+  margin-right: 0px;
+}
 .social-list-icons a {
   width: 56px;
   height: 56px;
@@ -421,6 +435,7 @@ img {
 
 .team-card:hover .team-img {
   transform: translate(-10px, -10px);
+  
 
 }
 
@@ -449,6 +464,7 @@ img {
   transition-duration: .2s;
   transition-delay: .2s;
   transition-timing-function: linear;
+  
 
 }
 
@@ -475,22 +491,23 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
+  margin-top: 24px;
 
 }
 
 .form {
   display: flex;
   width: 380px;
-  height: 40px;
+  
 
 
 }
 
 
 .inputin {
-
+  height: 40px;
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: rgb(204, 204, 204);
   font-style: italic;
   line-height: 1.6;
@@ -498,7 +515,15 @@ img {
   border-width: 1px;
   border-color: rgb(231, 231, 231);
   background-color: rgb(255, 255, 255);
+  padding-left: 15px;
 }
+.inputin::placeholder{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(204, 204, 204);
+  font-style: italic;
+}
+
 
 .low-button {
   display: block;
