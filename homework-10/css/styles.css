@@ -101,7 +101,7 @@ ul{
   list-style-type: none;
 }
 .container {
-   outline: 2px red;
+   
 margin: 0 auto;
   width: 1200px;
 }
@@ -134,7 +134,7 @@ margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   width: 680px;
-  padding-top: 30зx;
+  padding-top: 30px;
   
 }
 .nav-link::after{
@@ -174,9 +174,7 @@ margin: 0 auto;
 .main-navigation__buttons{
   display: flex;
   justify-content: space-between;
-  align-content: baseline;
-
-  width: 60px;
+  width: 90px;
 
 }
 
@@ -284,7 +282,7 @@ padding-bottom: 110px;
 }
   
  .content-svg{
-  fill: white;
+  fill: #fff;
   width: 20px;
   height: 20px;
 
@@ -481,7 +479,7 @@ padding-bottom: 110px;
     top: 0;
     left: 0;
    
-    ground-image: url(../svg/digital.svg);
+    background-image: url(../svg/digital.svg);
   }
   
   /* Заголовки с карточками*/
@@ -615,6 +613,10 @@ padding-bottom: 110px;
     margin-right: 0px;
   }
   .social-list-icons a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
     width: 56px;
     height: 56px;
     background-color: rgb(252, 227, 138);
@@ -623,8 +625,9 @@ padding-bottom: 110px;
     background-repeat: no-repeat;
   }
   .social-list-icons a:hover{
+background-color: #f38181;
   
-      background-color: #f38181;
+      
     }
     
   
@@ -642,13 +645,20 @@ padding-bottom: 110px;
   }
   
   
-  
+  .social-list-icons a{
+    position: relative;
+  }
   .content-icon-svg{
-    transform: translateY(50%,-50%);
-    object-position: center;
-    width: 56px;
-    height: 56px;
-    fill: pink
+ 
+    
+    
+   
+    
+    
+    width: 32px;
+    height: 32px;
+    
+    fill: #fff;
   }
   .icons:hover {
     background-color: rgb(149, 225, 211);
@@ -680,15 +690,17 @@ padding-bottom: 110px;
   }
   
   .low-footer {
+    margin: 0 auto;
     
     display: flex;
-    width: 100%;
+  
     justify-content: space-between;
     align-items: center;
     margin-bottom: 26px;
     margin-top: 24px;
-  
+    
   }
+ 
   
   .form {
     display: flex;
