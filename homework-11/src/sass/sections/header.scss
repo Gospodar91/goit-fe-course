@@ -1,0 +1,93 @@
+.main-navigation {
+  padding-top: 24px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.main-navigation__logo {
+  font-size: 30px;
+  font-family: $main-font;
+  font-weight: bold;
+  line-height: 1.2;
+
+  &-link {
+    color: $color-white;
+
+  }
+}
+
+/*logo end*/
+.main-navigation__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+  padding-top: 30px;
+
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 490px;
+  align-items: center;
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: 10px;
+      height: 4px;
+      width: 100%;
+    }
+
+    &:hover .nav-list__item-link {
+      color: $yellow-color;
+
+    }
+
+    &:hover::after {
+      opacity: 1;
+      content: '';
+      visibility: visible;
+      background-color:$yellow-color;
+    }
+
+    &-link {
+      font-size: 14px;
+      font-family: $main-font;
+      color: $color-white;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+
+  &__button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+
+    &-svg {
+      fill: $color-white;
+      width: 20px;
+      height: 20px;
+
+    }
+
+    &-svg:hover {
+      fill: $yellow-color;
+    }
+  }
+}

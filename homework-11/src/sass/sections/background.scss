@@ -1,0 +1,71 @@
+
+.background {
+ 
+background-image: $background-linear, url('../images/bg-min.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+
+
+&__welcome {
+  text-align: center;
+  padding-bottom: 230px;
+
+
+&-message {
+  padding-top: 200px;
+  display: block;
+  font-size: 72px;
+  font-family: $kaushan-font;
+  color: $color-white;
+  padding-bottom: 50px;
+
+}
+
+
+&-title {
+  text-align: center;
+  display: flex;
+  width: 860px;
+  flex-wrap: wrap;
+  font-size: 9.375rem;
+
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: bold;
+  font-family: $main-font;
+
+  padding-bottom: 110px;
+
+
+}
+
+&-button {
+  width: 158px;
+  height: 38px;
+  border: 2px solid $color-white;
+  margin: 0 auto;
+  color: $color-white;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: $main-font;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+}
+
+
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .background {
+    background-image: $background-linear, url('../img/bg@2x-hard.png');
+  }
+}
+}
