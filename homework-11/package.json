@@ -9,10 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Gospodar91.github.io/goit-fe-course/",
+  "homepage": "https://gospodar91.github.io/goit-fe-course/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gospodar91/goit-fe-cource.git"
+    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
